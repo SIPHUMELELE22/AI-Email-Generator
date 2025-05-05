@@ -7,7 +7,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>AI Email Generator</h1>
+    <header>
+      <h1>AI Email Generator</h1>
+      <p class="subtext">
+        Craft professional, personalized, or casual emails instantly using AI.
+        Save time, stay polished, and communicate effectively with just a few
+        clicks.
+      </p>
+    </header>
+    <main>
+      <div class="container" id="container">
+        <form>
+          <label>Email content details</label>
+          <textarea
+            name="prompt"
+            id="prompt"
+            placeholder="Example: Write a professional email to request a meeting with the team. The meeting will be on Monday at 2:00 pm."
+            cols="30"
+            rows="10"
+            autofocus
+            required
+          ></textarea>
+          <input type="submit" id="generateBtn" value="Generate Email"></input>
+        </form>
+        <div id="output" class="hidden">
+          <h2>Generated Email</h2>
+          <textarea
+            name="output"
+            id="output"
+            cols="30"
+            rows="10"
+            readonly
+          ></textarea>
+        </div>
+      </div>
+    </main>
+    <footer>
+      This AI project was coded by
+      <a href="https://github.com/SIPHUMELELE22" target="_blank">
+        Siphumelele Makatisa
+      </a>
+      and is open-sourced on
+      <a
+        href="https://github.com/SIPHUMELELE22/AI-Email-Generator"
+        target="_blank"
+      >
+        GitHub
+      </a>
+      and hosted on
+      <a href="https://instamailai.netlify.app/" target="_blank"> Netlify </a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
