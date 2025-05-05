@@ -18,7 +18,7 @@
     <main>
       <div class="container" id="container">
         <form>
-          <label>Email content details</label>
+          <label for="prompt">Email content details</label>
           <textarea
             name="prompt"
             id="prompt"
@@ -28,13 +28,14 @@
             autofocus
             required
           ></textarea>
-          <input type="submit" id="generateBtn" value="Generate Email"></input>
+          <input type="submit" class="generateBtn" id="generateBtn" value="Generate Email"></input>
         </form>
         <div id="output" class="hidden">
           <h2>Generated Email</h2>
           <textarea
             name="output"
             id="output"
+            class="output"
             cols="30"
             rows="10"
             readonly
