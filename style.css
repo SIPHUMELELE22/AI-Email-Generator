@@ -1,9 +1,10 @@
 body {
   background-color: #f9fafb;
+  margin: 0 100px;
 }
 header {
   margin-bottom: 30px;
-  margin-top: 120px;
+  margin-top: 75px;
 }
 h1 {
   text-align: center;
@@ -17,28 +18,33 @@ h1 {
   color: #64748b;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
-.container form {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 .grid-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: 100%;
+  margin: 0 50px;
 }
 .hidden {
   display: none;
 }
-
+label {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  color: #1d4ed8;
+  font-weight: 600;
+}
 textarea {
   resize: none;
-  padding: 10px;
   border-radius: 5px;
   border: 1px solid #d0d5dd;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -54,28 +60,21 @@ textarea::placeholder {
 .generateBtn {
   background-color: #1e3a8a;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  display: block;
+  margin: 15px auto;
 }
 .generateBtn:hover {
   background-color: #1d4ed8;
   transform: scale(1.05);
 }
-.output {
-  border-radius: 5px;
-  padding: 0 10px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #1f2937;
-  border: 1px solid #d0d5dd;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-}
 footer {
   text-align: center;
-  margin-top: 30px;
+  margin: 30px 0;
   font-size: 14px;
 }
 a {
