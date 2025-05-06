@@ -23,23 +23,15 @@
             name="prompt"
             id="prompt"
             placeholder="Example: Write a professional email to request a meeting with the team. The meeting will be on Monday at 2:00 pm."
-            cols="30"
-            rows="10"
             autofocus
             required
           ></textarea>
           <input type="submit" class="generateBtn" id="generateBtn" value="Generate Email"></input>
         </form>
-        <div id="output" class="hidden">
-          <h2>Generated Email</h2>
-          <textarea
-            name="output"
-            id="output"
-            class="output"
-            cols="30"
-            rows="10"
-            readonly
-          ></textarea>
+        <div id="outputContainer" class="hidden">
+          <label for="result">Generated Email</label>
+          <textarea name="result" id="result" class="result" readonly></textarea>
+          <button id="copyBtn" class="generateBtn">Copy Email</button>
         </div>
       </div>
     </main>
