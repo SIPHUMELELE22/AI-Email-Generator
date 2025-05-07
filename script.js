@@ -13,7 +13,7 @@ function getResponse(event) {
   let promptElement = document.querySelector("#prompt");
   let apiKey = "a8410f837a6231f43oc1a1t6c91926bb";
   let context =
-    "You are an expert email writer, generate a well-structured email for the given prompt.";
+    "You are an expert email writer. Generate clear, polite, and professional emails based on the given prompt. Avoid generic greetings like 'Hi there' unless specified. Include appropriate structure: greeting, body, and closing. Respond with the email only—no explanations.";
   let prompt = `User instructions: Generate an email for ${promptElement.value}.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
