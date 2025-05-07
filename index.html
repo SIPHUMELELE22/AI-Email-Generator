@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Email Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -30,8 +32,7 @@
         </form>
         <div id="outputContainer" class="hidden">
           <label for="result">Generated Email</label>
-          <textarea name="result" id="result" class="result" readonly></textarea>
-          <button id="copyBtn" class="generateBtn">Copy Email</button>
+          <div name="result" id="result" class="result" readonly></div>
         </div>
       </div>
     </main>
