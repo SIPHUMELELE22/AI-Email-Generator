@@ -22,7 +22,7 @@ function getResponse(event) {
   }
 
   let responseElement = document.querySelector("#result");
-  responseElement.innerHTML = "Generating email, please wait...";
+  responseElement.innerHTML = `<div class="generating">⏳ Generating email, please wait...</div>`;
   let responseContainer = document.querySelector("#outputContainer");
   responseContainer.classList.remove("hidden");
   let containerElement = document.querySelector("#container");
