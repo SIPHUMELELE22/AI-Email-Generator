@@ -16,6 +16,11 @@ function getResponse(event) {
   let prompt = `You are an expert email writer. Generate a well-structured email based on this request ${promptElement.value}.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  if (!promptElement.value) {
+    alert("Please enter a prompt before generating the email.");
+    return;
+  }
+
   let responseElement = document.querySelector("#result");
   responseElement.innerHTML = "Generating email, please wait...";
   let responseContainer = document.querySelector("#outputContainer");
